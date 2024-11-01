@@ -6,7 +6,7 @@ El Dashboard en Looker Studio puede consultarse en la siguiente URL:
 
 https://lookerstudio.google.com/reporting/b949015c-d65b-4cdc-9c08-fb9d7f3803b0
 
-El Dashboard en PowerBI se encuentra en formatos pdf y pbix. En caso de querer aplicar filtros, se puede descargar entonces este último archivo y abrirlo desde el programa.
+El Dashboard en PowerBI se encuentra adjunto en formatos pdf y pbix. En caso de querer aplicar filtros, se puede descargar entonces este último archivo y abrirlo desde el programa.
 
 Si bien ambos dashboards pueden utilizarse para analizar las campañas en cuestión, este ejercicio tan solo busca ser una breve exposición de habilidades de Dashboading aplicadas al Marketing.
 
@@ -14,4 +14,6 @@ En este sentido, no abarca todo el potencial y las capacidades del desarrollador
 
 Los datos expuestos en este Dashboard son públicos y corresponden a campañas reales de marketing completamente ajenas al desarrollador.
 
-La fuente de datos puede consultarse en la siguiente URL: https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending
+La fuente de datos puede consultarse en la siguiente URL:
+
+https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending
