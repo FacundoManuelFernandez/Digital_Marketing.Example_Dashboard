@@ -6,7 +6,7 @@ El Dashboard en PowerBI se encuentra en pdf, por lo que no permite utilizar filt
 
 Si bien ambos dashboards pueden utilizarse para analizar las campañas en cuestión, este ejercicio tan solo busca ser una breve exposición de habilidades de Dashboading aplicadas al Marketing.
 
-En este sentido, no abarca todo el potencial y las capacidades del desarrollador ni de esta u otra herramienta.
+En este sentido, no abarca todo el potencial y las capacidades del desarrollador ni de estas u otras herramientas.
 
 Los datos expuestos en este Dashboard son públicos y corresponden a campañas reales de marketing completamente ajenas al desarrollador.
 
