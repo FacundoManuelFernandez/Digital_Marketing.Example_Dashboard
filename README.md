@@ -2,7 +2,9 @@ Este conjunto de Dashboards es un ejercicio creativo desarrollado por el Lic. Fa
 
 Se replicó exactamente el mismo Dashboard en Power BI y en Looker Studio, tanto en sus visualizaciones y filtros como en sus datos.
 
-El Dashboard en Looker Studio puede consultarse aquí: https://lookerstudio.google.com/reporting/b949015c-d65b-4cdc-9c08-fb9d7f3803b0
+El Dashboard en Looker Studio puede consultarse en la siguiente URL:
+
+https://lookerstudio.google.com/reporting/b949015c-d65b-4cdc-9c08-fb9d7f3803b0
 
 El Dashboard en PowerBI se encuentra en formatos pdf y pbix. En caso de querer aplicar filtros, se puede descargar entonces este último archivo y abrirlo desde el programa.
 
