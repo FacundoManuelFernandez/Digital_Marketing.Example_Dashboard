@@ -14,6 +14,6 @@ En este sentido, no abarca todo el potencial y las capacidades del desarrollador
 
 Los datos expuestos en este Dashboard son públicos y corresponden a campañas reales de marketing completamente ajenas al desarrollador.
 
-La fuente de datos puede consultarse en la siguiente URL:
+La fuente de datos original está subida en esta carpeta en formato CSV. Puede consultarse y descargarse también en la siguiente URL:
 
 https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending
