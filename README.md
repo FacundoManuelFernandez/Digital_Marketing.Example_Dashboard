@@ -14,6 +14,8 @@ En este sentido, no abarca todo el potencial y las capacidades del desarrollador
 
 Los datos expuestos en este Dashboard son públicos y corresponden a campañas reales de marketing completamente ajenas al desarrollador.
 
+Se encuentran adjuntos el archivo con las fórmulas utilizadas para la creación de métricas en Power BI con DAX, así como con los campos calculados en Looker Studio.
+
 La fuente de datos original está subida en esta carpeta en formato CSV. Puede consultarse y descargarse también en la siguiente URL:
 
 https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending
