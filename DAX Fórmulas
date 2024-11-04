@@ -15,22 +15,23 @@ SWITCH(
 
 ## Fórmulas para métricas de conversión:
 
-CTR = SUM([Clics]) / SUM([Impresiones])
-Conversión I = SUM([Suscripciones]) / SUM([Clics])
-Conversión II = SUM([Ventas]) / SUM([Suscripciones])
+CTR = SUM([Clics]) / SUM([Impresiones])                       // Click-Through Rate (Tasa de Clics)
+Conversión I = SUM([Suscripciones]) / SUM([Clics])            // Conversión de suscriptores a clics
+Conversión II = SUM([Ventas]) / SUM([Suscripciones])          // Conversión de suscriptores a consumidores
 
 ## Fórmulas para métricas de costos
 
-CPC = SUM([Inversión en Marketing]) / SUM([Clics])
-CPL = SUM([Inversión en Marketing]) / SUM([Suscripciones])
-CAC = SUM([Inversión en Marketing]) / SUM([Ventas])
+CPC = SUM([Inversión en Marketing]) / SUM([Clics])             // Costo por clic
+CPL = SUM([Inversión en Marketing]) / SUM([Suscripciones])     // Costo por lead (suscripción)
+CAC = SUM([Inversión en Marketing]) / SUM([Ventas])            // Costo de adquisición de cliente
 
 ## Fórmulas para métricas de evaluación de desempeño de la campaña
 
-Ganancia Bruta = SUM([Ingresos]) - SUM([Inversión en Marketing])
-ROMI = (SUM(Marketing[Ingresos]) - SUM(Marketing[Inversión en Marketing])) / SUM(Marketing[Inversión en Marketing])
-AOV = SUM([Ingresos]) / SUM([Ventas])
+Ganancia Bruta = SUM([Ingresos]) - SUM([Inversión en Marketing])     // No es necesaria la agregación, pero se usó para seguir el mismo formato que las demás fórmulas.
+ROMI = (SUM(Marketing[Ingresos]) - SUM(Marketing[Inversión en Marketing])) / SUM(Marketing[Inversión en Marketing])    // Return on Marketing Investment
+AOV = SUM([Ingresos]) / SUM([Ventas])                          // Average Order Value
 
+## Comentario respecto a la agregación en las fórmulas
 // Se utiliza SUM en estas fórmulas para asegurarse que los valores de las columnas se sumen primero, obteniendo los totales antes de realizar la división.
-// Esto permite calcular total de cada métrica en lugar de hacerlo solo a nivel de fila,
+// Esto permite calcular total de cada métrica en lugar de hacerlo solo a nivel de fila.
 // Además, SUM permite que la fórmula se ajuste automáticamente al contexto de la visualización en Power BI, como al segmentar por fecha o campaña.
