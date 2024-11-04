@@ -1,0 +1,62 @@
+# Fórmulas de campos calculados en Looker Studio
+
+## Fórmula de creación de la dimensión "Medio"
+
+CASE
+  WHEN Campaña IN ("FB_retargeting", "FB_lal", "FB_tier1", "FB_tier2") THEN "Facebook"
+  WHEN Campaña IN ("GGL_hot", "GGL_wide") THEN "Google"
+  WHEN Campaña IN ("BAN_partner") THEN "Banner"
+  WHEN Campaña IN ("YT_blogger") THEN "YouTube"
+  WHEN Campaña IN ("IG_blogger", "IG_tier1", "IG_tier2") THEN "Instagram"
+  ELSE NULL
+END
+
+## Fórmulas para métricas de conversión
+
+// CTR (Tasa de clics)
+(SUM(Clics) / SUM(Impresiones))
+
+// Conversión de suscriptores a ventas
+SUM(Ventas)/SUM(Suscripciones)
+
+// Conversión de visitantes a suscriptores
+SUM(Suscripciones)/SUM(Clics)
+
+## Fórmulas para métricas de costos
+
+// CPC (Costo por clic)
+SUM(Inversión en Marketing)/SUM(Clics)
+
+// CPL (Costo por lead)
+SUM(Inversión en Marketing)/SUM(Suscripciones)
+
+// CAC (Costo de adquisición de cliente)
+SUM(Inversión en Marketing)/SUM(Ventas)
+
+##Fórmulas para métricas de evaluación de desempeño de la campaña
+
+// Ganancia bruta
+Ingresos-Inversión en Marketing     // En este caso no es necesario usar SUM() porque se asume que ambos campos ya representan valores totales en el contexto de los datos.
+
+// ROMI (Return on Marketing Investment)
+(SUM(Ingresos)-SUM(Inversión en Marketing))/SUM(Inversión en Marketing)
+
+// AOV (Average Order Value)
+SUM(Ingresos)/SUM(Ventas)
+
+
+## Comentario respecto a la agregación en las fórmulas
+// Al igual que en las fórmulas de DAX, es necesario crear métricas agregadas: SUM('Métrica'). 
+// Si, por ejemplo, se dejara "Ingresos / Ventas" sin más para crear una métrica de AOV, el resultado sería una dimensión numérica no agregada. 
+// Usar esto en un gráfico aplicaría la agregación predeterminada de Suma y calcularía el total por fila de los datos.
+// Para crear una métrica calculada agregada, hay que incluir las funciones de agregación deseadas para cualquiera de los campos numéricos que forman parte de la fórmula.
+// Para más información, se puede consultar la siguiente URL:
+// https://support.google.com/looker-studio/answer/6299685?hl=en&ref_topic=7570421&sjid=5542861680042598990-SA#zippy=%2Cin-this-article
+
+## Comentario respecto a la no agregación en la fórmula de 'Ganancia bruta'
+// Al usar el operador de resta (-) en la fórmula "Ingresos - Inversión en Marketing", no es necesario aplicar funciones de agregación como SUM.
+// Esto es así porque se espera que ambos campos representen totales. Looker Studio evalúa automáticamente los contextos y calcula los totales correspondientes.
+// Esto permite realizar operaciones directas entre ellos sin redundancias.
+
+
+
