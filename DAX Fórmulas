@@ -1,0 +1,36 @@
+# Fórmulas DAX
+
+## Fórmula de creación del campo "Medio":
+
+Medio = 
+SWITCH(
+    TRUE(),             // Utiliza SWITCH con TRUE para evaluar múltiples condiciones, asignando cada Campaña a una categoría de Medio específica.
+    Marketing[Campaña] IN {"FB_retargeting", "FB_lal", "FB_tier1", "FB_tier2"}, "Facebook",
+    Marketing[Campaña] IN {"GGL_hot", "GGL_wide"}, "Google",
+    Marketing[Campaña] = "BAN_partner", "Banner",
+    Marketing[Campaña] = "YT_blogger", "YouTube",
+    Marketing[Campaña] IN {"IG_blogger", "IG_tier1", "IG_tier2"}, "Instagram",
+    BLANK()             // Si ninguna condición coincide, devuelve BLANK (valor en blanco)
+)
+
+## Fórmulas para métricas de conversión:
+
+CTR = SUM([Clics]) / SUM([Impresiones])
+Conversión I = SUM([Suscripciones]) / SUM([Clics])
+Conversión II = SUM([Ventas]) / SUM([Suscripciones])
+
+## Fórmulas para métricas de costos
+
+CPC = SUM([Inversión en Marketing]) / SUM([Clics])
+CPL = SUM([Inversión en Marketing]) / SUM([Suscripciones])
+CAC = SUM([Inversión en Marketing]) / SUM([Ventas])
+
+## Fórmulas para métricas de evaluación de desempeño de la campaña
+
+Ganancia Bruta = SUM([Ingresos]) - SUM([Inversión en Marketing])
+ROMI = (SUM(Marketing[Ingresos]) - SUM(Marketing[Inversión en Marketing])) / SUM(Marketing[Inversión en Marketing])
+AOV = SUM([Ingresos]) / SUM([Ventas])
+
+// Se utiliza SUM en estas fórmulas para asegurarse que los valores de las columnas se sumen primero, obteniendo los totales antes de realizar la división.
+// Esto permite calcular total de cada métrica en lugar de hacerlo solo a nivel de fila,
+// Además, SUM permite que la fórmula se ajuste automáticamente al contexto de la visualización en Power BI, como al segmentar por fecha o campaña.
