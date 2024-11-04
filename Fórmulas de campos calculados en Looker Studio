@@ -13,7 +13,7 @@ END
 
 ## Fórmulas para métricas de conversión
 
-// CTR (Tasa de clics)
+// CTR (Click-Through Rate - Tasa de Clics)
 (SUM(Clics) / SUM(Impresiones))
 
 // Conversión de suscriptores a ventas
@@ -33,7 +33,7 @@ SUM(Inversión en Marketing)/SUM(Suscripciones)
 // CAC (Costo de adquisición de cliente)
 SUM(Inversión en Marketing)/SUM(Ventas)
 
-##Fórmulas para métricas de evaluación de desempeño de la campaña
+## Fórmulas para métricas de evaluación de desempeño de la campaña
 
 // Ganancia bruta
 Ingresos-Inversión en Marketing     // En este caso no es necesario usar SUM() porque se asume que ambos campos ya representan valores totales en el contexto de los datos.
