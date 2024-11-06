@@ -16,7 +16,7 @@ SWITCH(
 ## Fórmulas para métricas de conversión:
 
 CTR = SUM([Clics]) / SUM([Impresiones])                       // Click-Through Rate (Tasa de Clics)
-Conversión I = SUM([Suscripciones]) / SUM([Clics])            // Conversión de suscriptores a clics
+Conversión I = SUM([Suscripciones]) / SUM([Clics])            // Conversión de clics a suscriptores
 Conversión II = SUM([Ventas]) / SUM([Suscripciones])          // Conversión de suscriptores a consumidores
 
 ## Fórmulas para métricas de costos
