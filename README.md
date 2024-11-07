@@ -16,8 +16,10 @@ Los datos expuestos en este Dashboard son públicos y corresponden a campañas r
 
 Se encuentran adjuntos los archivos con las fórmulas utilizadas para la creación de métricas con DAX en Power BI, así como las fórmulas de los campos calculados en Looker Studio.
 
+Asimismo, está disponible también un archivo Excel con la base de datos limpia y preparada junto con una tabla dinámica. A la par, se encuentra subido un archivo con la explicación del proceso ETL que se llevó a cabo y las fórmulas utilizadas para calcular los campos en la tabla dinámica.
+
 La fuente de datos original está subida en esta carpeta en formato CSV. Puede consultarse y descargarse también en la siguiente URL:
 
 https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending
 
-Si tienes alguna duda, consulta o comentario no dudas en hacermela saber!
+Si tienes alguna duda, consulta o acotación no dudas en hacermela saber!
