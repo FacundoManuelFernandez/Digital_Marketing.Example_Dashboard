@@ -19,3 +19,5 @@ Se encuentran adjuntos los archivos con las fórmulas utilizadas para la creaci�
 La fuente de datos original está subida en esta carpeta en formato CSV. Puede consultarse y descargarse también en la siguiente URL:
 
 https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending
+
+Si tienes alguna duda, consulta o comentario no dudas en hacermela saber!
