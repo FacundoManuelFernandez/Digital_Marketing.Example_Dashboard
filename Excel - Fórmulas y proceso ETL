@@ -1,0 +1,43 @@
+# Proceso ETL
+- Se separaron los valores del archivo CSV original en columnas utilizando la función Text to Column.
+- Se transformó la base en formato Tabla.
+- Se tradujó el nombre de todas las columnas al español.
+- Se colocó en mayúscula la primera letra de los valores de la columna 'Categoría'.
+- Se asignó el formato Currency a los campos 'Inversión en Marketing' e 'Ingresos'.
+- Se asignó el formato personalizado #.##0 a los campos 'Clics', 'Impresiones' y 'Suscripciones' para el utilizar el punto ( . ) como separador de miles.
+
+#Fórmula para crear la columna 'Medio'
+
+=IFS(                                            // Se utilizó una fórmula condicional múltiple (SI.CONJUNTO en español) para asignar un valor de 'Medio' a cada campaña según su nombre.
+[@[Nombre Campaña]]="facebook_tier1";"Facebook";
+[@[Nombre Campaña]]="facebook_tier2";"Facebook";
+[@[Nombre Campaña]]="facebook_retargeting";"Facebook";
+[@[Nombre Campaña]]="facebook_lal";"Facebook";
+[@[Nombre Campaña]]="banner_partner";"Banner";
+[@[Nombre Campaña]]="youtube_blogger";"Youtube";
+[@[Nombre Campaña]]="instagram_blogger";"Instagram";
+[@[Nombre Campaña]]="instagram_tier1";"Instagram";
+[@[Nombre Campaña]]="instagram_tier2";"Instagram";
+[@[Nombre Campaña]]="google_wide";"Google";
+[@[Nombre Campaña]]="google_hot";"Google"
+)
+
+# Creación de campos calculados para la tabla dinámica
+// Para que las métricas calculadas (CTR, CPC, etc.) puedan utilizarse en la tabla dinámica no sirve crear una fórmula para cada fila directamente en la base de datos.
+// Las fórmulas a nivel de fila solo permiten calcular métricas individualmente por cada registro, pero no de forma agregada.
+// En otras palabras, las fórmulas por fila no permiten realizar cálculos basados en los totales de otros campos dentro de la tabla dinámica.
+// El procedimiento adecuado consiste en crear estos campos calculados desde 'Pivot Table Analyze' --> 'Fields, items and sets' --> 'Calculated Field...'
+
+## Fórmulas utilizadas
+
+CTR	= Clics/Impresiones
+Conversión I (de clics a suscripciones))	= Suscripciones/Clics
+Conversión II (de suscripciones a ventas)	= Ventas/Suscripciones
+CPC	= 'Inversión en Marketing'/Clics
+CPL	= 'Inversión en Marketing'/Suscripciones
+CAC	= 'Inversión en Marketing'/Ventas
+AOV	= Ingresos/Ventas
+Ganancia bruta	= Ingresos-'Inversión en Marketing'
+ROMI	= (Ingresos-'Inversión en Marketing') /'Inversión en Marketing'
+
+// Se puede tener una vista de las fórmulas creadas desde 'Pivot Table Analyze' --> 'Fields, items and sets' --> 'List formulas'
