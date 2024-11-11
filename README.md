@@ -22,4 +22,4 @@ La fuente de datos original está subida en esta carpeta en formato CSV. Puede c
 
 https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending
 
-Si tienes alguna duda, consulta o acotación no dudas en hacermela saber!
+Si tienes alguna duda, consulta o acotación no dudes en hacermela saber!
