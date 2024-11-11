@@ -16,10 +16,10 @@ END
 // CTR (Click-Through Rate - Tasa de Clics)
 (SUM(Clics) / SUM(Impresiones))
 
-// Conversión de suscriptores a ventas
+// Conversión de suscripciones a ventas
 SUM(Ventas)/SUM(Suscripciones)
 
-// Conversión de visitantes a suscriptores
+// Conversión de clics a suscripciones
 SUM(Suscripciones)/SUM(Clics)
 
 ## Fórmulas para métricas de costos
@@ -27,10 +27,10 @@ SUM(Suscripciones)/SUM(Clics)
 // CPC (Costo por clic)
 SUM(Inversión en Marketing)/SUM(Clics)
 
-// CPL (Costo por lead)
+// CPL (Costo por lead/suscripción)
 SUM(Inversión en Marketing)/SUM(Suscripciones)
 
-// CAC (Costo de adquisición de cliente)
+// CAC (Costo por venta / Costo de Adquisición de Cliente)
 SUM(Inversión en Marketing)/SUM(Ventas)
 
 ## Fórmulas para métricas de evaluación de desempeño de la campaña
