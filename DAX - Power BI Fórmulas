@@ -16,14 +16,14 @@ SWITCH(
 ## Fórmulas para métricas de conversión:
 
 CTR = SUM([Clics]) / SUM([Impresiones])                       // Click-Through Rate (Tasa de Clics)
-Conversión I = SUM([Suscripciones]) / SUM([Clics])            // Conversión de clics a suscriptores
-Conversión II = SUM([Ventas]) / SUM([Suscripciones])          // Conversión de suscriptores a consumidores
+Conversión I = SUM([Suscripciones]) / SUM([Clics])            // Conversión de clics a suscripciones
+Conversión II = SUM([Ventas]) / SUM([Suscripciones])          // Conversión de suscripciones a ventas
 
 ## Fórmulas para métricas de costos
 
 CPC = SUM([Inversión en Marketing]) / SUM([Clics])             // Costo por clic
 CPL = SUM([Inversión en Marketing]) / SUM([Suscripciones])     // Costo por lead (suscripción)
-CAC = SUM([Inversión en Marketing]) / SUM([Ventas])            // Costo de adquisición de cliente
+CAC = SUM([Inversión en Marketing]) / SUM([Ventas])            // Costo por venta (Costo de Adquisición de Cliente)
 
 ## Fórmulas para métricas de evaluación de desempeño de la campaña
 
