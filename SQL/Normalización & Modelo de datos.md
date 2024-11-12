@@ -1,6 +1,4 @@
-En SQL realizamos un proceso de creación de una base de datos e inserción de registros desde cero.
-
-En primer lugar, se procedió a la normalización de la tabla original. Este proceso se realizó como mero ejercicio, ya que en términos prácticos no afecta significativamente la eficiencia ni el desempeño de una base de datos de este tamaño.
+La normalización de la tabla original se realizó como mero ejercicio, ya que en términos prácticos no afecta significativamente la eficiencia ni el desempeño de una base de datos de este tamaño.
 
 La tabla original consta de los siguientes campos:
 - id : identificación unívoca del desempeño de cada campaña por día. En total hay 11 IDs por fecha, uno por cada campaña
@@ -59,7 +57,3 @@ Las relaciones entre tablas quedan establecidas de la siguiente manera:
 - ID_Campaña (PK) en Campaña se relaciona con ID_Campaña (FK) en Tabla De Hechos - Relación: Uno a Muchos (1 a *)
 - ID_Categoría (PK) en Categoría se relaciona con ID_Categoría (FK) en Tabla De Hechos - Relación: Uno a Muchos (1 a *)
 - ID_Medio (PK) en Medio se relaciona con ID_Medio (FK) en Tabla De Hechos - Relación: Uno a Muchos (1 a *)
-
-Una vez definido el esquema de la base de datos, se procedió a su creación utilizando Transact-SQL y a la inserción de registros desde archivos CSV. Se utilizaron 4 archivos (uno para cada tabla).
-
-Dentro de la carpeta 'CSV' pueden encontrar las fuentes de datos utilizadas y en 'Queries' los scripts para la creación de la base y la carga de los datos.
