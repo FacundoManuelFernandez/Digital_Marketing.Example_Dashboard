@@ -7,7 +7,11 @@ DECIMAL(18,2) se puede traducir como: número de hasta 18 digitos y con dos deci
 
 Se eligió este tipo de dato porque, si bien algunos registros representan números enteros, la mayoría se expresa en montos con dos decimales.
 
-Ahora bien, sucede que, si el número originalmente no lleva decimales, Excel lo considera como un número entero, por más de que el formato asignado a la celda incluya decimales. Es decir, si el monto en un principio es '2548' y ni '2548,00' por más de que agreguemos manualmente la terminacion decimal, Excel lo sigue considerando como '2548' a secas... y en SQL no se puede insertar un número entero en un campo con tipo de dato DECIMAL.
+Ahora bien, sucede que, si el número originalmente no lleva decimales, Excel lo considera como un número entero, por más de que el formato asignado a la celda incluya decimales. 
+
+Es decir, si el monto en un principio es '2548' y ni '2548,00' por más de que agreguemos manualmente la terminacion decimal, Excel lo sigue considerando como '2548' a secas...
+
+y en SQL no se puede insertar un número entero en un campo con tipo de dato DECIMAL.
 
 Podemos resolver con dos pasos:
 a) Añadición de decimales a aquellos valores con números enteros.
