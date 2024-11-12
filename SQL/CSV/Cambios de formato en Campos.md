@@ -17,6 +17,8 @@ a) Adición de decimales a aquellos valores con números enteros.
 
 b) Reemplazo de comas por puntos.
 
+---------------------------------------------------------------------------------------------------------
+
 a) Adición de decimales a aquellos valores con números enteros
 
 Este proceso se realiza mediante la siguiente fórmula:
@@ -42,10 +44,15 @@ Mediante esta fórmula condicional lo que hacemos es indicarle a Excel que trans
 Esto es fundamental, ya que no es posible agregar la finalización decimal ",00" si la celda no está en formato texto.
 Al mismo tiempo, se le asigna al final del "texto" (",00") en caso de que el número no tuviera tal terminación.
 
+-------------
+
 b) Reemplazo de comas por puntos
+
 Una vez realizada la transformación, es necesario reemplazar las comas ( , ) por puntos ( . ) con la función Find & Replace, ya que SQL entiende al punto ( . ) como separador decimal.
 
 Con esos dos pasos la columna ya está lista para ser cargada en SQL como tipo de dato DECIMAL(18,2).
+
+---------------------------------------------------------------------------------------------------------
 
 2. Cambio de formato del campo Fecha
 
