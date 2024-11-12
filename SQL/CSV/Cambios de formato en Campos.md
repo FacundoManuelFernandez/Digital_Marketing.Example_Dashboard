@@ -9,12 +9,12 @@ Se eligió este tipo de dato porque, si bien algunos registros representan núme
 
 Ahora bien, sucede que, si el número originalmente no lleva decimales, Excel lo considera como un número entero, por más de que el formato asignado a la celda incluya decimales. 
 
-Es decir, si el monto en un principio es '2548' y ni '2548,00' por más de que agreguemos manualmente la terminacion decimal, Excel lo sigue considerando como '2548' a secas...
-
-y en SQL no se puede insertar un número entero en un campo con tipo de dato DECIMAL.
+Es decir, si el monto en un principio es '2548' y ni '2548,00' por más de que agreguemos manualmente la terminacion decimal, Excel lo sigue considerando como '2548' a secas... y en SQL no se puede insertar un número entero en un campo con tipo de dato DECIMAL.
 
 Podemos resolver esto en dos pasos:
+
 a) Añadición de decimales a aquellos valores con números enteros.
+
 b) Reemplazo de comas por puntos.
 
 a) Añadición de decimales a aquellos valores con números enteros
@@ -27,10 +27,15 @@ En principio, la sintaxis de esta fórmula es la siguiente:
 =IF( Condición a cumplir ; Valor en caso de que se cumpla ; Valor en caso de que no se cumpla )
 
 Veámosla entonces en desglose:
+
 =IF(                  -- Si...
+
 ISNUMBER(H2);         -- La celda es un número
+
 TEXT(H2;"0,00");      -- Convertirla a texto y añadir al final ",00"
+
 H2                    -- Si no, dejarla tal como está
+
 )
 
 Mediante esta fórmula condicional lo que hacemos es indicarle a Excel que transforme el valor de las celdas en formato numérico a formato texto.
