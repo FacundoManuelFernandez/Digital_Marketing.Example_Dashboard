@@ -27,15 +27,15 @@ El resto de los campos no se normaliza, ya que corresponden a valores directos, 
 
 Esto resultó en la creación de tres nuevas entidades:
 
-Campaña
+1. Campaña
 - ID_Campaña (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) - PK
 - Nombre Campaña (facebook_tier1, facebook_tier2, google_hot, google_wide, youtube_blogger, instagram_tier1, instagram_tier2, facebook_retargeting, facebook_lal, instagram_blogger, banner_partner)
 
-Categoría
+2. Categoría
 - ID_Categoría (1, 2, 3, 4) - PK
 - Categoría (Social, Search, Influencer, Media)
 
-Medio
+3. Medio
 - ID_Medio (1, 2, 3, 4, 5) - PK
 - Medio (YouTube, Instagram, Google, Facebook, Banner)
 
