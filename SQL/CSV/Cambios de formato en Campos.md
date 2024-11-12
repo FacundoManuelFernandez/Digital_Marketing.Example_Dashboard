@@ -26,6 +26,7 @@ Este proceso se realiza mediante la siguiente fórmula:
 =IF(ISNUMBER(H2); TEXT(H2;"0,00"); H2)
 
 En principio, la sintaxis de esta fórmula es la siguiente:
+
 =IF( Condición a cumplir ; Valor en caso de que se cumpla ; Valor en caso de que no se cumpla )
 
 Veámosla entonces en desglose:
@@ -52,6 +53,7 @@ Una vez realizada la transformación, es necesario reemplazar las comas ( , ) po
 
 Con esos dos pasos la columna ya está lista para ser cargada en SQL como tipo de dato DECIMAL(18,2).
 
+---------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------
 
 2. Cambio de formato del campo Fecha
