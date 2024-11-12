@@ -30,7 +30,7 @@ CREATE TABLE TablaDeHechos (
     ID_NombreCampaña TINYINT,
     ID_Categoria TINYINT,
     ID_Medio TINYINT,
-	ID_Campaña INT,
+    ID_Campaña INT,
     Impresiones BIGINT,
     Inversion_Marketing DECIMAL(18, 2),
     Clics INT,
@@ -39,6 +39,6 @@ CREATE TABLE TablaDeHechos (
     Ingresos INT,
     FOREIGN KEY (ID_Categoria) REFERENCES Categoria(ID_Categoria),
     FOREIGN KEY (ID_Medio) REFERENCES Medio(ID_Medio),
-	FOREIGN KEY (ID_NombreCampaña) REFERENCES Campaña(ID_NombreCampaña)
+    FOREIGN KEY (ID_NombreCampaña) REFERENCES Campaña(ID_NombreCampaña)
 );
 GO
