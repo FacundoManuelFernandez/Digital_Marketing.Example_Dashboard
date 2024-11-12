@@ -13,11 +13,11 @@ Es decir, si el monto en un principio es '2548' y ni '2548,00' por más de que a
 
 Podemos resolver esto en dos pasos:
 
-a) Añadición de decimales a aquellos valores con números enteros.
+a) Adición de decimales a aquellos valores con números enteros.
 
 b) Reemplazo de comas por puntos.
 
-a) Añadición de decimales a aquellos valores con números enteros
+a) Adición de decimales a aquellos valores con números enteros
 
 Este proceso se realiza mediante la siguiente fórmula:
 
