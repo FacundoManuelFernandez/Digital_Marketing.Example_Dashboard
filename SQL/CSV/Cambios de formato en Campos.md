@@ -30,21 +30,9 @@ En principio, la sintaxis de esta fórmula es la siguiente:
 
 =IF( Condición a cumplir ; Valor en caso de que se cumpla ; Valor en caso de que no se cumpla )
 
-Veámosla entonces en desglose:
+Es decir, que mediante esta fórmula condicional lo que hacemos es indicarle a Excel que, si la celda es un número, que la convierta a formato texto y añada al final ",00". Si no, que la deje tal como está.
 
-=IF(                 
--- Si...
-ISNUMBER(H2);         -- La celda es un número
-
-TEXT(H2;"0,00");      -- Convertirla a texto y añadir al final ",00"
-
-H2                    -- Si no, dejarla tal como está
-
-)
-
-Mediante esta fórmula condicional lo que hacemos es indicarle a Excel que transforme el valor de las celdas en formato numérico a formato texto.
-Esto es fundamental, ya que no es posible agregar la finalización decimal ",00" si la celda no está en formato texto.
-Al mismo tiempo, se le asigna al final del "texto" (",00") en caso de que el número no tuviera tal terminación.
+Es fundamental que transforma el valor a formato texto, ya que no es posible agregar la finalización decimal ",00" si la celda está en formato de número.
 
 -------------
 
