@@ -1,5 +1,5 @@
-BULK INSERT Campaña
-FROM 'C:\Users\Facundo\Documents\Facundo\Data Analysis\Proyectos\Dashboard Model\SQL\CSVs\Campaña.csv'
+BULK INSERT CampaÃ±a
+FROM 'C:\Users\Facundo\Documents\Facundo\Data Analysis\Proyectos\Dashboard Model\SQL\CSVs\CampaÃ±a.csv'
 WITH (
     FIELDTERMINATOR = ';',  -- Define el separador de columnas
     ROWTERMINATOR = '\n',   -- Define el separador de filas
@@ -7,7 +7,7 @@ WITH (
 );
 
 BULK INSERT Categoria
-FROM 'C:\Users\Facundo\Documents\Facundo\Data Analysis\Proyectos\Dashboard Model\SQL\CSVs\Categoría.csv'
+FROM 'C:\Users\Facundo\Documents\Facundo\Data Analysis\Proyectos\Dashboard Model\SQL\CSVs\CategorÃ­a.csv'
 WITH (
     FIELDTERMINATOR = ';',
     ROWTERMINATOR = '\n',
