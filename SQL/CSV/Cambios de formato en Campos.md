@@ -32,8 +32,8 @@ En principio, la sintaxis de esta fórmula es la siguiente:
 
 Veámosla entonces en desglose:
 
- =IF(                 -- Si...
-
+=IF(                 
+-- Si...
 ISNUMBER(H2);         -- La celda es un número
 
 TEXT(H2;"0,00");      -- Convertirla a texto y añadir al final ",00"
