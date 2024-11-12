@@ -56,9 +56,9 @@ Y finalmente una 'Tabla de Hechos' con los siguientes campos:
 - Ingresos
 
 Las relaciones entre tablas quedan establecidas de la siguiente manera:
-- ID_Campaña (PK) en Campaña se relaciona con ID_Campaña (FK) en Tabla De Hechos
-- ID_Categoría (PK) en Categoría se relaciona con ID_Categoría (FK) en Tabla De Hechos
-- ID_Medio (PK) en Medio se relaciona con ID_Medio (FK) en Tabla De Hechos
+- ID_Campaña (PK) en Campaña se relaciona con ID_Campaña (FK) en Tabla De Hechos - Relación: Uno a Muchos (1 a *)
+- ID_Categoría (PK) en Categoría se relaciona con ID_Categoría (FK) en Tabla De Hechos - Relación: Uno a Muchos (1 a *)
+- ID_Medio (PK) en Medio se relaciona con ID_Medio (FK) en Tabla De Hechos - Relación: Uno a Muchos (1 a *)
 
 Una vez definido el esquema de la base de datos, se procedió a su creación utilizando Transact-SQL y a la inserción de registros desde archivos CSV. Se utilizaron 4 archivos (uno para cada tabla).
 
