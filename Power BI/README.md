@@ -1,1 +1,1 @@
-
+Dentro de esta carpeta se encuentra el Dashboard realizado en Power BI en formatos pdf y pbix. En caso de querer aplicar filtros, se puede descargar entonces este último archivo y abrirlo desde el programa. Asimismo, se adjunta un archivo con las fórmulas en DAX utilizadas para la creación de métricas y dimensiones.
