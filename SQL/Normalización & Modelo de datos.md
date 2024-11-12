@@ -25,7 +25,7 @@ El resto de los campos no se normaliza, ya que corresponden a valores directos, 
 - Fechas (c_date)
 - Métricas (impresiones, clics, suscripciones, ventas, inversión en marketing, ingresos).
 
-Esto resultó en la creación de tres nuevas entidades con sus respectivos campos:
+Esto resultó en la creación de tres nuevas entidades:
 
 1) Campaña
 - ID_Campaña (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11) - PK
