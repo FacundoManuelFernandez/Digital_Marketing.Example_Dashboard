@@ -1,5 +1,8 @@
 Se realizaron dos cambios en el formato de los datos en el CSV para poder integrarlos en SQL:
 
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
 1. Cambio de formato del campo 'Inversión_Marketing'
 
 Por la naturaleza del contenido de Inversión_Marketing, en SQL se asignó al campo el tipo de dato 'DECIMAL(18, 2)'.
@@ -17,7 +20,6 @@ a) Adición de decimales a aquellos valores con números enteros.
 
 b) Reemplazo de comas por puntos.
 
----------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------
 
 a) Adición de decimales a aquellos valores con números enteros
