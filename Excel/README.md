@@ -1,1 +1,1 @@
-
+Dentro de esta carpeta se encuentra un archivo Excel (.xlsx) con la base de datos limpia y preparada, así como una tabla dinámica lista para su uso. Además, se incluye un archivo con la explicación detallada del proceso ETL realizado y las fórmulas utilizadas para calcular los campos dentro de la tabla dinámica.
