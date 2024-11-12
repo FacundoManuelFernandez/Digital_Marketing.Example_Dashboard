@@ -1,6 +1,6 @@
 Se realizaron dos cambios en el formato de los datos en el CSV para poder integrarlos en SQL:
 
-1. Cambio del formato del campo 'Inversión_Marketing'
+1. Cambio de formato del campo 'Inversión_Marketing'
 
 Por la naturaleza del contenido de Inversión_Marketing, en SQL se asignó al campo el tipo de dato 'DECIMAL(18, 2)'.
 DECIMAL(18,2) se puede traducir como: número de hasta 18 digitos y con dos decimales.
@@ -13,7 +13,7 @@ Es decir, si el monto en un principio es '2548' y ni '2548,00' por más de que a
 
 y en SQL no se puede insertar un número entero en un campo con tipo de dato DECIMAL.
 
-Podemos resolver con dos pasos:
+Podemos resolver esto en dos pasos:
 a) Añadición de decimales a aquellos valores con números enteros.
 b) Reemplazo de comas por puntos.
 
@@ -42,7 +42,7 @@ Una vez realizada la transformación, es necesario reemplazar las comas ( , ) po
 
 Con esos dos pasos la columna ya está lista para ser cargada en SQL como tipo de dato DECIMAL(18,2).
 
-2. Cambio del formato de fecha
+2. Cambio de formato del campo Fecha
 
 Si bien el formato de fecha en la tabla original es dd/mm/yyyy (día/mes/año), Microsoft SQL Server la considera como mm/dd/yyyy de forma predeterminada.
 
