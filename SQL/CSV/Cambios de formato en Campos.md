@@ -18,6 +18,7 @@ a) Adición de decimales a aquellos valores con números enteros.
 b) Reemplazo de comas por puntos.
 
 ---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 
 a) Adición de decimales a aquellos valores con números enteros
 
@@ -31,7 +32,7 @@ En principio, la sintaxis de esta fórmula es la siguiente:
 
 Veámosla entonces en desglose:
 
-=IF(                  -- Si...
+ =IF(                 -- Si...
 
 ISNUMBER(H2);         -- La celda es un número
 
