@@ -1,1 +1,0 @@
-En esta carpeta se encuentran las cuatro tablas utilizadas en formato CSV, junto con un archivo que describe cambios efectuados en el formato de algunos campos de la Tabla de Hechos para poder realizar la correcta inserción de registros en SQL.
