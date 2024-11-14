@@ -1,1 +1,1 @@
-
+En esta carpeta se encuentran 6 scripts, uno por cada página del Dashboard. Para cada visualización del Dashboard hay una consulta SELECT específica que trae exactamente la misma información que allí se muestra.
