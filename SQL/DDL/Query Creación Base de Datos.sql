@@ -36,7 +36,7 @@ CREATE TABLE TablaDeHechos (
     Clics INT,
     Suscripciones SMALLINT,
     Ventas SMALLINT,
-    Ingresos INT,
+    Ingresos DECIMAL(18, 2),
     FOREIGN KEY (ID_Categoria) REFERENCES Categoria(ID_Categoria),
     FOREIGN KEY (ID_Medio) REFERENCES Medio(ID_Medio),
     FOREIGN KEY (ID_NombreCampaña) REFERENCES Campaña(ID_NombreCampaña)
