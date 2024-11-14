@@ -5,6 +5,6 @@ En primer lugar, se realizó el proceso de normalización de la base original y 
 Dentro de cada carpeta se puede encontrar el siguiente contenido:
 - DDL (Data Definition Language): scripts para la creación de la base de datos y métricas correspondientes.
 - INSERT (CSV): scripts y fuentes de datos utilizadas para la inserción de registros.
-- SELECT Dashboard: consultas para traer la misma información que figura en el Dashboard replicado en Looker Studio y Power BI.
+- SELECT Dashboard: consultas para traer la información que figura en el Dashboard replicado en Looker Studio y Power BI.
 
 Además, está a disposición un archivo con la descripción del proceso de normalización y modelo de datos.
