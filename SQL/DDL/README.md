@@ -1,4 +1,4 @@
-En esta carpeta pueden encontrar dos scripts:
+En esta carpeta se pueden encontrar dos scripts:
 
 1. Creación de la base de datos
 
