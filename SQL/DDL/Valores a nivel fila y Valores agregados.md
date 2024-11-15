@@ -12,4 +12,4 @@ No sucede lo mismo con "Ganancia bruta" (Inversión - Ingresos). Dicha métrica 
 
 Por esto mismo es que en Excel, por ejemplo, dichas métricas se calculan sobre la Tabla Dinámica y no sobre la propia base de datos (fila por fila).
 
-En SQL, el cálculo DE estas métricas que requieren agregación se realiza directamente en cada consulta específica o, a lo sumo, en un CTE (Common Table Expression) o vista si se desea optimizar la eficiencia de la consulta
+En SQL, el cálculo de estas métricas que requieren agregación se realiza directamente en cada consulta específica o, a lo sumo, en un CTE (Common Table Expression) o vista si se desea optimizar la eficiencia de la consulta
