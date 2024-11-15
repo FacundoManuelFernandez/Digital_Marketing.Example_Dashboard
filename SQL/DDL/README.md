@@ -7,3 +7,5 @@ Mediante este script se creó la base de datos con sus cuatro tablas respectivas
 2. Adición Métricas calculadas
 
 Mediante este script se agregaron y definieron mediante fórmula las métricas calculadas necesarias, realizándose la aclaración pertinente en caso de que no fuera posible o conveniente.
+
+Se encuentra adjunto, asimismo, una aclaración respecto a la diferencia entre valores a nivel de fila y valores agregados, a los fines de esclarecer la utilización de métricas calculadas como CTR o CPC en SQL.
