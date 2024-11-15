@@ -1,1 +1,1 @@
-En esta carpeta se encuentran 6 scripts, uno por cada página del Dashboard. Para cada visualización del Dashboard hay una consulta SELECT específica que trae exactamente la misma información que allí se muestra.
+En esta carpeta se encuentran 6 scripts, uno por cada página del Dashboard. Para cada visualización del Dashboard hay una consulta SELECT específica que trae exactamente la misma información que allí se muestra. Asimismo, se adjunta también un script donde se explica cómo replicar en SQL el uso de los slicers del Dashboard.
