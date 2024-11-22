@@ -16,4 +16,4 @@ https://www.kaggle.com/datasets/sinderpreet/analyze-the-marketing-spending
 
 Los datos utilizados son públicos y corresponden a campañas reales de marketing completamente ajenas al desarrollador.
 
-Si tienes alguna consulta o acotación no dudes en hacermela saber!
+Si tienes alguna consulta o acotación no dudes en hacérmela saber!
