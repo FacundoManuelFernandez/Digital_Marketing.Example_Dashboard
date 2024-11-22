@@ -1,6 +1,6 @@
 En SQL procedimos a la creación de una base de datos e inserción de registros desde cero.
 
-En primer lugar, se realizó el proceso de normalización de la base original y la confección del modelo de datos. Una vez definidos, se continuó con la creación de la base en SQL y la inserción de registros desde archivos CSV. Finalmente, se codificaron queries para obtener la información expuesta en el dashboard.
+En primer lugar, se realizó el proceso de normalización de la tabla original y la confección del modelo de datos. Una vez definidos, se continuó con la creación de la base en SQL y la inserción de registros desde archivos CSV. Finalmente, se codificaron queries para obtener la información expuesta en el dashboard.
 
 Dentro de cada carpeta se puede encontrar el siguiente contenido:
 - DDL (Data Definition Language): scripts para la creación de la base de datos y métricas correspondientes.
