@@ -1,4 +1,4 @@
-Este repositorio es un ejercicio creativo aplicado al Marketing Digital que desarrolló el Lic. Facundo Manuel Fernandez con fines meramente demostrativos.
+Este repositorio es un ejercicio creativo aplicado al Marketing Digital que desarrolló el Lic. Facundo Manuel Fernandez.
 
 Es de particular utilidad para quienes deseen estudiar y analizar la aplicación de métricas de marketing digital (CTR, CPC, Conversiones, etc.) en los distintos softwares, especialmente por el desafío que supone el manejo de cálculos a nivel de fila y la agregación de las métricas.
 
